@@ -18,6 +18,10 @@ public class GestorDeInventario {
 
     public DtoProducto createproducto(DtoProducto DtoProducto) {
         DtoProducto.setId(nextProductoId++);
+        DtoProducto.setDescripcion(nextProductoDescripcion++);
+        DtoProducto.setPrecio(nextProductoPrecio++);
+        DtoProducto.setCantidadInicial(nextProductoCantidadInicial++);
+        DtoProducto.setCategoria(nextProductoCategoria++);
         producto.add(DtoProducto);
         return DtoProducto;
     }
